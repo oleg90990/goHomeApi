@@ -1,1 +1,0 @@
-Api lib for friendshome apps

@@ -1,4 +1,4 @@
-export { ICityItem } from '../Dictionaries/types'
+import { ICityItem } from '../Dictionaries/types'
 
 export interface IUserUpdateData {
     mobile?: string,
@@ -13,7 +13,7 @@ export interface IUser {
     id: number,
     name: string,
     email: string,
-    city?: ICityItem,
+    city: ICityItem,
     mobile: string,
     vk: boolean,
     vkGroups: number[]
