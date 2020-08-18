@@ -1,6 +1,6 @@
 {
   "name": "friendshome-api",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.ts",
   "scripts": {
@@ -17,6 +17,11 @@
     "type": "git",
     "url": "git+https://github.com/oleg90990/goHomeApi.git"
   },
+  "dependencies": {
+    "typescript": "~3.8.3",
+    "axios": "^0.19.2",
+    "react-native-vkontakte-login": "^1.0.1"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
@@ -25,11 +30,7 @@
     "mocha": "^7.1.1",
     "tslint": "^6.1.1",
     "ts-node": "^8.8.1",
-    "typescript": "~3.8.3",
-    "axios": "^0.19.2",
-    "react-native-vkontakte-login": "^1.0.1"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=8"
   },

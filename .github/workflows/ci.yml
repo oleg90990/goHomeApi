@@ -14,7 +14,7 @@ jobs:
       with:
         registry-url: https://npm.pkg.github.com/
         node-version: 8.x
-        scope: '@dalenguyen'
+        scope: '@oleg90990'
     - name: npm install, build, and test
       run: |
         npm install
