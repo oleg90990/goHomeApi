@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oleg90990",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react-native-vkontakte-login": "^1.0.1"
+  }
+}
