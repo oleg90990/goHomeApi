@@ -32,7 +32,10 @@ export default class Axios {
 
     axiosBase.interceptors.request.use(
       async config => {
-        config.headers.Authorization = `Bearer ${token}`
+        if (token) {
+          config.headers.Authorization = `Bearer ${token}`
+        }
+
         return config
       },
       error => {
