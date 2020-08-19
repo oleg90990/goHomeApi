@@ -1,3 +1,9 @@
 import Axios from './axios';
 
-export default Axios;
+export * from './enum'
+export * from './api/Ads/types' 
+export * from './api/Dictionaries/types' 
+export * from './api/User/types' 
+export * from './api/Vk/types' 
+
+export default Axios
