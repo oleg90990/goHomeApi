@@ -6,4 +6,4 @@ export * from './api/Dictionaries/types'
 export * from './api/User/types'
 export * from './api/Vk/types'
 
-export default Axios
+export default Mode
