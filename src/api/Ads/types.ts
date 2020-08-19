@@ -24,7 +24,7 @@ export interface IItem {
     vkPosts: number[]
 }
 
-export interface IStateSearchForm {
+export interface IStateSearchBody {
   animal?: number;
   ages: AgeState;
   colors: number[];

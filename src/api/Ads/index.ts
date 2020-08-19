@@ -4,7 +4,7 @@ import {
     IItem,
     IPostCreatedBody,
     IPostUpdateBody,
-    IStateSearchForm,
+    IStateSearchBody,
     IFindBody
 } from './types'
 
@@ -23,7 +23,7 @@ export default class Ads {
         return this.axiosInstance.post('ads/update', params);
     }
     
-    public async find(params: IStateSearchForm, sortBy: Sortby, page: number): Promise<AxiosResponse<IFindBody>> {
+    public async find(params: IStateSearchBody, sortBy: Sortby, page: number): Promise<AxiosResponse<IFindBody>> {
         return this.axiosInstance.post('ads/find', { ...params, sortBy, page });
     }
 
