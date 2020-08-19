@@ -1,7 +1,7 @@
 {
   "name": "friendshome-api",
   "version": "1.0.1",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
     "build": "tsc",
