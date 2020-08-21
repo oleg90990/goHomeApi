@@ -10,6 +10,7 @@ export interface IItem {
     id: number,
     title: string,
     images: string[],
+    thumbnail: string,
     content: string,
     age: number,
     colors: number[],
