@@ -41,7 +41,6 @@ export interface IPostCreatedBody extends Omit<IItem, 'id' | 'user_id' | 'active
 }
 
 export interface IPostUpdateBody extends Omit<IItem, 'user_id' | 'active' | 'vkPosts' | 'thumbnail' | 'city' | 'phone'> {
-  socials: Social[]
 }
 
 export type IFindBody = {

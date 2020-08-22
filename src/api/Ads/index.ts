@@ -31,6 +31,10 @@ export default class Ads {
         return this.axiosInstance.get('posts/me');
     }
 
+    public async loadPost(id: number): Promise<AxiosResponse<IItem>> {
+        return this.axiosInstance.get('posts/${id}');
+    }
+
     public async publish(id: number, active: boolean): Promise<AxiosResponse<IItem>> {
         return this.axiosInstance.post(`posts/publish`, {
             active,
