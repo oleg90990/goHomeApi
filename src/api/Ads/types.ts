@@ -23,6 +23,7 @@ export interface IItem {
     city?: ICityItem,
     city_id?: number,
     vkPosts: number[]
+    phone: string
 }
 
 export interface IStateSearchBody {
