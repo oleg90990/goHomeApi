@@ -32,7 +32,7 @@ export default class Ads {
     }
 
     public async loadPost(id: number): Promise<AxiosResponse<IItem>> {
-        return this.axiosInstance.get('posts/${id}');
+        return this.axiosInstance.get(`posts/${id}`);
     }
 
     public async publish(id: number, active: boolean): Promise<AxiosResponse<IItem>> {
