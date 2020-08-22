@@ -7,23 +7,23 @@ export interface AgeState {
 }
 
 export interface IItem {
-    id: number,
-    title: string,
-    images: string[],
-    thumbnail: string,
-    content: string,
-    age: number,
-    colors: number[],
-    animal_id: number,
-    breed_id: number,
-    active: boolean,
-    user_id: number,
-    gender: Gender,
-    sterilization: YesNo
-    city?: ICityItem,
-    city_id?: number,
-    vkPosts: number[]
-    phone: string
+  id: number,
+  title: string,
+  images: string[],
+  thumbnail: string,
+  content: string,
+  age: number,
+  colors: number[],
+  animal_id: number,
+  breed_id: number,
+  active: boolean,
+  user_id: number,
+  gender: Gender,
+  sterilization: YesNo
+  city: ICityItem,
+  city_id: number,
+  vkPosts: number[]
+  phone: string
 }
 
 export interface IStateSearchBody {
@@ -36,16 +36,16 @@ export interface IStateSearchBody {
   city?: ICityItem
 }
 
-export interface IPostCreatedBody extends Omit<IItem, 'id' | 'user_id' | 'active' | 'vkPosts' | 'thumbnail'> {
-    socials: Social[]
+export interface IPostCreatedBody extends Omit<IItem, 'id' | 'user_id' | 'active' | 'vkPosts' | 'thumbnail' | 'city' | 'phone'> {
+  socials: Social[]
 }
 
-export interface IPostUpdateBody extends Omit<IItem, 'user_id' | 'active' | 'vkPosts' | 'thumbnail'> {
-    socials: Social[]
+export interface IPostUpdateBody extends Omit<IItem, 'user_id' | 'active' | 'vkPosts' | 'thumbnail' | 'city' | 'phone'> {
+  socials: Social[]
 }
 
 export type IFindBody = {
-    items: IItem[],
-    lastPage: number,
-    currentPage: number
+  items: IItem[],
+  lastPage: number,
+  currentPage: number
 }

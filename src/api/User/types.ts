@@ -13,7 +13,7 @@ export interface IUser {
     id: number,
     name: string,
     email: string,
-    city: ICityItem,
+    city?: ICityItem,
     mobile: string,
     vk: boolean,
     vkGroups: number[]
