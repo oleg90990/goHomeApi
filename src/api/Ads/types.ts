@@ -35,11 +35,11 @@ export interface IStateSearchBody {
   city?: ICityItem
 }
 
-export interface IPostCreatedBody extends Omit<IItem, 'id' | 'user_id' | 'active' | 'vkPosts'> {
+export interface IPostCreatedBody extends Omit<IItem, 'id' | 'user_id' | 'active' | 'vkPosts' | 'thumbnail'> {
     socials: Social[]
 }
 
-export interface IPostUpdateBody extends Omit<IItem, 'user_id' | 'active' | 'vkPosts'> {
+export interface IPostUpdateBody extends Omit<IItem, 'user_id' | 'active' | 'vkPosts' | 'thumbnail'> {
     socials: Social[]
 }
 
